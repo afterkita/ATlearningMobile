@@ -5,7 +5,7 @@ namespace ATframework3demo.PageObjects.Mobile
 {
     public class MobileCRMNewContactPage
     {
-        public MobileContactProfilePage CreateContact(Bitrix24Contact testContact)
+        public MobileContactProfilePage CreateMobileContact(Bitrix24Contact testContact)
         {
             Thread.Sleep(1000);
             var fieldForTextView = new MobileItem("//android.view.ViewGroup[@content-desc='contact_0_details_editor_NAME_FIELD']", "TextView поля ввода Имя");
