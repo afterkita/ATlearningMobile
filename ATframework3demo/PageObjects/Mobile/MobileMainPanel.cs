@@ -16,7 +16,7 @@ namespace ATframework3demo.PageObjects.Mobile
             return new MobileTasksListPage();
         }
 
-        public MobileMenuPage SelectMenu()
+        public MobileMenuPage SelectMenu() //Ищет в нижнем меню кнопку с надписью Menu и выбирает её
         {
             var menuTab = new MobileItem("//android.widget.TextView[@resource-id='com.bitrix24.android:id/bb_bottom_bar_title' and @text='Menu']",
                 "Таб 'Меню'");

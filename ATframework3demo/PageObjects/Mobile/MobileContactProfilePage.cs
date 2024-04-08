@@ -6,7 +6,7 @@ namespace ATframework3demo.PageObjects.Mobile
 {
     public class MobileContactProfilePage
     {
-        public void IsMobileContactCreated(Bitrix24Contact testContact)
+        public void IsMobileContactCreated(Bitrix24Contact testContact) //Проверяет существует ли контакт с заданным именем
         {
             string xpath = "//android.widget.TextView[@resource-id='com.bitrix24.android:id/pageTitle' and @text='" + testContact.Name + "']";
 

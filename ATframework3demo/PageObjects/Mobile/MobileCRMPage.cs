@@ -4,7 +4,7 @@ namespace ATframework3demo.PageObjects.Mobile
 {
     public class MobileCRMPage
     {
-        public MobileCRMNewContactPage OpenNewContactForm()
+        public MobileCRMNewContactPage OpenNewContactForm() //Создаёт пустую форму для добавления нового контакта
         {
             var addButton = new MobileItem("//android.view.ViewGroup[@content-desc='KANBAN_STAGE_ADD_BTN']", "Кнопка Добавить");
             addButton.Click();

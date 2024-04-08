@@ -19,14 +19,14 @@ namespace ATframework3demo.TestCases
         void CreateContact(MobileHomePage homePage)
         {
             string contactName = "Ivan Contactovich";
-            var contactForTest = new Bitrix24Contact(contactName);
+            var contactForMobilTest = new Bitrix24Contact(contactName);
             // Выбрать меню - открыть CRM - Создать контакт - Проверить создан ли контакт
             homePage.TabsPanel
                 .SelectMenu()
                 .OpenCRM()
                 .OpenNewContactForm()
-                .CreateMobileContact(contactForTest)
-                .IsMobileContactCreated(contactForTest);
+                .CreateMobileContact(contactForMobilTest)
+                .IsMobileContactCreated(contactForMobilTest);
         }
     }
 }
